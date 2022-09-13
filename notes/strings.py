@@ -2,11 +2,11 @@
 
 print("Python's strings are easy to use")
 
-# concatinate strings to make longer ones using +
+# concatenate strings to make longer ones using +
 
 print('hello'+' world')
 
-# you can store strings in variables, which makes contatination make more sense
+# you can store strings in variables, which makes contatenation make more sense
 
 greeting = 'hello'
 name = 'bruce'

@@ -16,6 +16,6 @@ print(age)
 
 print(type(age))
 
-# because python is strongly typed, you cannot contatinate multiple types of data
+# because python is strongly typed, you cannot contatenate multiple types of data
 
 # print(age + ' years old') - this will not work
