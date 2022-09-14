@@ -21,3 +21,8 @@ elif age == 900:
 else:
     print("You are old enough to vote.")
     print('Please put an X in the box.')
+
+# if blocks
+# when testing for equality, make sure to use == and not =
+# an if statement can includ many elif parts, but only one else
+# the else must come after all elifs
