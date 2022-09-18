@@ -31,7 +31,7 @@ while guess != secret:
             if guess[i] == secret[i]:
                 spaces[i] = colored(guess[i], 'green')
             elif guess[i] in secret:
-                spaces[i] = colored(guess[i], 'yellow')
+                spaces[i] = colored(guess[i], 'blue')
             else:
                 spaces[i] = colored(guess[i], 'red')
         result = ''.join(spaces)
