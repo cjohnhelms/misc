@@ -8,7 +8,7 @@ from termcolor import colored
 #         print('Please enter a guess of ' + str(len(secret)) + ' characters.')
 #         guess = str(input().title())
 
-pokemonFile = open('pokemon.txt')
+pokemonFile = open('./pokemon.txt')
 pokemonStr = pokemonFile.read()
 pokemonList = pokemonStr.split(", ")
 
@@ -17,8 +17,7 @@ secret = random.choice(pokemonList)
 spaces = 'X' * len(secret)
 
 print('This is Sqwordle, the Wordle for Pokemon. You have 6 guesses. If you don\'t know how this works, please go play Wordle first.')
-print(spaces + '-' + str(len(secret)))
-print(secret)
+print(spaces + ' - ' + str(len(secret)))
 guess = str(input().title())
 while len(guess) != len(secret):
         print('Please enter a guess of ' + str(len(secret)) + ' characters.')
