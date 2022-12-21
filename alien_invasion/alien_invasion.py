@@ -3,18 +3,18 @@
 import sys
 import pygame
 
+from settings import Settings
+
 class alienInvasion:
     
     def __init__(self):
         # Initialize game
         pygame.init()
-        
-        self.screen = pygame.display.set_mode((1200, 800))
+        self.settings = Settings()
+
+        self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invation")
         
-        # Set background color
-        self.bg_color = (230, 230, 230)
-
     def run_game(self):
         while True:
             # Watch for keyboard and mouse events
@@ -23,7 +23,7 @@ class alienInvasion:
                     sys.exit()
             
             # Redraw the screen during each pass through the loop
-            self.screen.fill(self.bg_color)
+            self.screen.fill(self.settings.bg_color)
 
             # Make screen visible
             pygame.display.flip()
