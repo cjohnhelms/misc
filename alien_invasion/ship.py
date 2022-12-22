@@ -3,7 +3,7 @@
 import pygame
 
 class Ship:
-    def __init__(self, ai_game)i:
+    def __init__(self, ai_game):
     # Initialize ship and set stating position
 	self.screen = ai_game.screen
 	self.screen_rect = ai_game.screen.get_rect()
