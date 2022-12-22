@@ -4,6 +4,7 @@ import sys
 import pygame
 
 from settings import Settings
+from ship import Ship
 
 class alienInvasion:
     
@@ -14,7 +15,9 @@ class alienInvasion:
 
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("Alien Invation")
-        
+
+        self.ship = Ship(self)
+
     def run_game(self):
         while True:
             # Watch for keyboard and mouse events
@@ -24,9 +27,11 @@ class alienInvasion:
             
             # Redraw the screen during each pass through the loop
             self.screen.fill(self.settings.bg_color)
+            self.ship.blitme()
 
             # Make screen visible
             pygame.display.flip()
+
 
 if __name__ == '__main__':
     # Make a game instance and run the game
